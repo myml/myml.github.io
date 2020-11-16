@@ -1,18 +1,19 @@
 # 个人简历
 ## 我的信息
-* 基本:吴荣杰,男,1997
-* 学历:河南职业技术学院(专科) 计算机网络技术
-* 联系:电话 17339602197 邮箱 wurongjie1@gmail.com
-* 个人网站:http://myml.ml
-* GitHub:https://github.com/myml
-* 工作经验:八个月,两次暑假兼职(网站软件开发方面)
+* 基本: 吴荣杰,男,1997
+* 学历: 河南职业技术学院(专科) 计算机网络技术
+* 联系: 电话 17339602197 邮箱 wurongjie1@gmail.com
+* GitHub: https://github.com/myml
+* 工作经验: 两年
 
 ## 我的技能
-* 熟练掌握:Google、Angular、React、RXJS、Typescript、ES6、Golang、Docker、Mongodb、Redis、Git
-* 有所接触:QML、Nodejs、Respberry、Python、Pandas、Mysql、FFmpeg、Hadoop、Spark、Vue、Bootstrap、C#.NET、Linux、HTTP、PHP、TCP、C
+* 熟练掌握: Angular、Vue、RXJS、Typescript、ES6、Golang、Gin、Gorm、Docker、Git、Linux
+* 有所接触: Google、QML、Nodejs、Python、Pandas、Mysql、FFmpeg、Hadoop、Spark、Bootstrap、C#.NET、HTTP、TCP、C、PHP、GRPC
 
 ## 我的经验
-* 2017年11月至2018年8月在武汉深之度做软件工程师，主要有使用Vue完成内部服务管理，使用React完成深度帮助手册2.0前端开发，使用Angular完成深度商店5.0（客户端、数据平台、运营平台）前端开发，以及后端部分功能。
+* 2019年至2020年在统信软件(原深之度)做后端工程师，主要工作有应用商店6.0管理平台后端开发。
+
+* 2017年至2019年在武汉深之度做前端工程师，主要工作有使用React完成深度帮助手册2.0前端开发，使用Angular完成深度商店5.0（客户端、数据平台、运营平台）前端开发，使用vue完成用户中心前端开发，使用Angular完成终端管控前端开发。
 
 * 2016年暑假在一家初创自媒体公司负责开发产品库系统,主要有外设产品的信息录入和展示。后端使用go语言做逻辑业务处理,MongoDB存储外设参数等基本信息,图片存入七牛CDN。前端使用vuejs+Materialize,为防止爬虫抓取,关键信息采用websocket加密传输。
 
