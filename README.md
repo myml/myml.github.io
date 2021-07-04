@@ -7,8 +7,8 @@
 ## 作品
 
 维护
-- https://github.com/myml/web-file-manager
-- https://github.com/myml/switch-streaming
+- [https://github.com/myml/web-file-manager](web file manager)
+- [https://github.com/myml/switch-streaming](ns switch streaming)
 
 早期
 - https://github.com/myml/qml-monitor
@@ -18,4 +18,4 @@
 - https://github.com/linuxdeepin/deepin-appstore
 
 ## 关于我
-[个人简历](https://github.com/myml/myml.dev/blob/master/wurongjie.md)
+[个人简历](wurongjie)
