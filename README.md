@@ -1,14 +1,14 @@
 # myml
 
-## 学习笔记 [https://myml.dev](myml.dev)
+## 学习笔记 [myml.dev](https://myml.dev)
 1. 每个 [Issue](https://github.com/myml/myml.dev/issues) 即为一条笔记，Comments 即为评论。
 2. 为保持整洁，请不要发起任何 Issue 和 Pull Request。
 
 ## 作品
 
 维护
-- [https://github.com/myml/web-file-manager](web file manager)
-- [https://github.com/myml/switch-streaming](ns switch streaming)
+- [web file manager](https://github.com/myml/web-file-manager)
+- [ns switch streaming](https://github.com/myml/switch-streaming)
 
 早期
 - https://github.com/myml/qml-monitor
