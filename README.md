@@ -12,8 +12,10 @@
 
 早期
 - https://github.com/myml/qml-monitor
-- https://github.com/myml/cloud-blob
 - https://github.com/myml/qiniu2ftp
+- https://github.com/myml/cloud-blob
+- https://github.com/linuxdeepin/deepin-manual
+- https://github.com/linuxdeepin/deepin-appstore
 
 ## 关于我
 [个人简历](https://github.com/myml/myml.dev/blob/master/wurongjie.md)
