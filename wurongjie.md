@@ -2,9 +2,9 @@
 ## 我的信息
 * 基本：吴荣杰,男,1997
 * 学历：河南职业技术学院(专科) 计算机网络技术
-* 联系：电话 17339602197 邮箱 wurongjie1@gmail.com
+* 联系：电话 173****2197 邮箱 wurongjie1@gmail.com
 * GitHub：https://github.com/myml
-* 工作经验：两年
+* 工作经验：2017年至今
 
 ## 我的技能
 * 熟练掌握：Golang、Typescript、Javascript、Angular、Vue、Gin、RXJS、Gorm、Docker、Git、Linux
