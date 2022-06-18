@@ -1,8 +1,8 @@
 baseURL = 'https://myml.dev/'
 languageCode = 'zh-hant'
 title = 'MYML.DEV'
-theme = "ananke"
 enableRobotsTXT = true
+theme = "ananke"
 [params]
   github = "https://github.com/myml"
   
