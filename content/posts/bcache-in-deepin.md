@@ -3,7 +3,7 @@ title: "Bcache in Deepin"
 date: 2022-06-19T00:09:58+08:00
 draft: false
 tags: ["存储"]
-category: ["工具"]
+categories: ["工具"]
 ---
 
 # Bcache 使用
