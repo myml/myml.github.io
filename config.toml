@@ -1,0 +1,6 @@
+baseURL = 'https://myml.dev/'
+languageCode = 'zh-hant'
+title = 'MYML.DEV'
+theme = "ananke"
+[params]
+  github = "https://github.com/myml"

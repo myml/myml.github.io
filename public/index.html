@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>MYML.DEV</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.101.0" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="MYML.DEV" />
+      <link href="/index.xml" rel="feed" type="application/rss+xml" title="MYML.DEV" />
+      
+    
+    
+    <meta property="og:title" content="MYML.DEV" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://myml.dev/" />
+
+<meta itemprop="name" content="MYML.DEV">
+<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MYML.DEV"/>
+<meta name="twitter:description" content=""/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        MYML.DEV
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          MYML.DEV
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+ <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    
+  </article>
+  
+  
+  
+  
+  
+  
+  
+    
+    
+
+    <div class="pa3 pa4-ns w-100 w-70-ns center">
+      
+       
+          <h1 class="flex-none">
+            Recent Posts
+          </h1>
+        
+
+      
+
+      <section class="w-100 mw8">
+        
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/bcache-in-deepin/" class="color-inherit dim link">
+            Bcache in Deepin
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Bcache 使用 Bcache 是什么 Bcache 是 Linux 下的一个块缓存内核模块，可用于使用单个固态硬盘为一个或多个机械硬盘加速，也可用于使用本地磁盘为网络磁盘的加速。
+Bcache 有比较灵活的缓存模式，支持安全读写缓存(writethrough)、高性能读写缓存(writeback)、只读缓存(writearound)、停用缓存(none)等模式，并且可在线动态调整。
+Bcache 还会自动识别顺序写入，当发现正在进行顺序写入时跳过缓存层，以减少缓存设备(固态硬盘)的损耗，延长固态硬盘的寿命。
+快速开始 ！警告：使用 Bcache 需要格式化相应设备，需谨慎操作。
+安装 deepin 仓库已存在 Bcache 1.0.8 版本，可直接在终端使用 sudo apt install bcache-tools 命令安装。
+格式化 安装完成后，可使用 sudo make-cache -C /dev/nvmeX -B /dev/sdX 格式化缓存设备(nvmeX)和后端设备(sdX)，并自动关联两个设备。
+可能出现的错误
+Device or resource busy 设备被占用，用 df 命令查看设备是不是已经被挂载使用，用 umount 取消挂载。 Device /dev/sdX already has a non-bcache superblock 设备已存在文件系统，为避免文件丢失，请在备份文件后，使用 sudo wipefs -a /dev/sdX 清除设备。 在顺利格式化后，会出现一个 /dev/bcache0 设备，大小与后端设备一致，可以当作普通的块设备使用。 例如使用 sudo mkfs.btrfs /dev/bcache0 格式化为 btrfs 文件系统格式，使用 sudo mount /deb/bcache0 /mnt 挂载。
+        </div>
+          <a href="/posts/bcache-in-deepin/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+      </section>
+
+      
+
+      </div>
+  
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://myml.dev/" >
+    &copy;  MYML.DEV 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
