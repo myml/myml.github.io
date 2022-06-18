@@ -17,10 +17,10 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
 
       - name: Build
-        run: hugo --minify
+        run: hugo --environment=production --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
