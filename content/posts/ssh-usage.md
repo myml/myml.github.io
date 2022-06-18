@@ -2,8 +2,8 @@
 title: "SSH Usage"
 date: 2022-06-19T00:30:16+08:00
 draft: false
-tags: ["network", "网络"]
-categories: ["工具"]
+tags: ["网络"]
+category: ["工具"]
 ---
 
 # SSH 常用功能
