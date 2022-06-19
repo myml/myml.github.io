@@ -1,0 +1,9 @@
+title: MYML.DEV
+baseURL: https://myml.dev/
+languageCode: zh-hant
+defaultContentLanguage: zh
+enableRobotsTXT: true
+theme: ananke
+googleAnalytics: G-J5MLQ5ERLF
+params:
+  github: https://github.com/myml
