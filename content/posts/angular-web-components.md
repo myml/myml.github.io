@@ -1,6 +1,6 @@
 ---
 title: "使用 Angular 构建可跨框架使用的 Web Components"
-date: 2022-06-19T00:09:58+08:00
+date: 2022-06-24T02:21:00+08:00
 draft: false
 tags: ["angular"]
 categories: ["前端"]
