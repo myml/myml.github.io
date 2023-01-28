@@ -2,7 +2,7 @@
 title: "Bcache in Deepin"
 date: 2022-06-19T00:09:58+08:00
 draft: false
-tags: ["存储"]
+tags: ["存储", "deepin"]
 categories: ["工具"]
 ---
 
