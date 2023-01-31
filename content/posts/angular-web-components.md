@@ -1,5 +1,4 @@
 ---
-title: "使用 Angular 构建可跨框架使用的 Web Components"
 date: 2022-06-24T02:21:00+08:00
 draft: false
 tags: ["angular"]
@@ -22,13 +21,17 @@ Angular的组件很棒，但只能在angular框架中使用，本文旨在记录
 
 本文尝试将angular material组件库中的日期选择器(datepicker)构建为Web Components，以实现在非angular环境使用。
 
+<!--more-->
+
 使用 `ng add @angular/material` 安装 angular material 组件库，在 `app.modules.ts` 导入 `MatNativeDateModule` 和 `MatDatepickerModule` 。
+
 ```typescript
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 ```
 
 添加 `MatNativeDateModule` 和 `MatDatepickerModule` 到 `AppModule` 模块的imports;
+
 ```typescript
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 ```
 
 删除 `app.component.html` 文件的所有内容，写入
+
 ```html
 <input [matDatepicker]="picker" />
 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
@@ -51,6 +55,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 
 上节我们创建了一个日期选择期，这节主要讲解如何将组件封装为Web Components。
 从 `AppModule` 删除 `bootstrap` 组件（AppComponent），并添加构造函数和ngDoBootstrap钩子。
+
 ```typescript
 // app.module.ts
 @NgModule({
@@ -78,18 +83,21 @@ export class AppModule implements DoBootstrap {
 ## 四：使用Web Components组件
 
 由于在上节将 `AppComponent` 从 `bootstrap` 删除，`AppComponent` 不会再自动挂载到 `app-root`，可以在 `index.html` 删除 `app-root` 元素，添加 `m-date` 元素，以使用上节注册的组件。
+
 ```html
 <!-- index.html -->
   <body>
     <m-date></m-date>
   </body>
 ```
+
 由于angular默认并不会在修改 `index.html` 后 自动刷新页面，需要在浏览器按F5手动刷新页面，在刷新后应该可以看到日历图标，点击后会弹出日期选择对话框。在开发者调试工具中可以看到，日志图表位于 `m-date` 的元素中。
 
 ## 五：发布Web Components组件
 
 上节中已经在angular的 `index.html` 粗略测试了封装的 Web Componetns的可用性，本节讲述如何在Linux 对封装的Web Components编译和打包。
 使用 `yarn build` 编译后会产出以下几个文件。
+
 ```sh
 
 Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
@@ -102,6 +110,7 @@ runtime.68788f74f641e937.js   | runtime       |   1.03 kB |               595 by
 ```
 
 可以看到有3个js文件和一个css文件，如果直接将这四个文件发布出去，使用者需要分别导入这四个文件，显的十分麻烦。在 Linux 可以通过简单的命令实现文件的合并：
+
 ```bash
 cat dist/m/*.js > main.js
 cat dist/m/*.css > main.css

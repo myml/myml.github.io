@@ -1,5 +1,4 @@
 ---
-title: "Bcache in Deepin"
 date: 2022-06-19T00:09:58+08:00
 draft: false
 tags: ["存储", "deepin"]
@@ -27,6 +26,8 @@ deepin 仓库已存在 Bcache 1.0.8 版本，可直接在终端使用 `sudo apt 
 ### 格式化
 
 安装完成后，可使用 `sudo make-cache -C /dev/nvmeX -B /dev/sdX` 格式化缓存设备(nvmeX)和后端设备(sdX)，并自动关联两个设备。
+
+<!--more-->
 
 > 可能出现的错误
 >
