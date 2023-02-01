@@ -1,11 +1,10 @@
 ---
+title: 使用 Angular 构建可跨框架使用的 Web Components
 date: 2022-06-24T02:21:00+08:00
 draft: false
 tags: ["angular"]
 categories: ["前端"]
 ---
-
-# 使用 Angular 构建可跨框架使用的 Web Components
 
 Angular的组件很棒，但只能在angular框架中使用，本文旨在记录使用 Angular 构建 Web Components 的最简步骤，[Web Components](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)是标准化的 HTML 组件规范，可实现跨框架(angular，vue，react)重用组件，甚至在无框架场景使用。
 

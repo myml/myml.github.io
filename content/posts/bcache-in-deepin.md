@@ -1,11 +1,10 @@
 ---
+title: Bcache 使用
 date: 2022-06-19T00:09:58+08:00
 draft: false
 tags: ["存储", "deepin"]
 categories: ["工具"]
 ---
-
-# Bcache 使用
 
 ## Bcache 是什么
 
