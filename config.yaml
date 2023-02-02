@@ -7,3 +7,5 @@ theme: ananke
 googleAnalytics: G-J5MLQ5ERLF
 params:
   github: https://github.com/myml
+staticDir:
+  - static
