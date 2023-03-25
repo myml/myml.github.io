@@ -1,5 +1,5 @@
 ---
-title: 使用 Transformers 训练新闻分类模型
+title: 使用 Transformers 训练中文分类模型
 date: 2023-03-20
 draft: false
 tags: ["pytorch"]
