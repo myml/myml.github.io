@@ -14,13 +14,14 @@ Angular的组件很棒，但只能在angular框架中使用，本文旨在记录
 
 使用 `ng new --style scss --routing false m` 创建一个 angular 应用，这会等待一端时间，请耐心点。
 
+
+<!--more-->
+
 使用 `ng add @angular/elements` 安装 Angular Web Components 依赖库。
 
 ## 二：创建组件
 
 本文尝试将angular material组件库中的日期选择器(datepicker)构建为Web Components，以实现在非angular环境使用。
-
-<!--more-->
 
 使用 `ng add @angular/material` 安装 angular material 组件库，在 `app.modules.ts` 导入 `MatNativeDateModule` 和 `MatDatepickerModule` 。
 

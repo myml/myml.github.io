@@ -20,6 +20,8 @@ LXC容器镜像：debian-11-standard_11.6-1_amd64
 
 P40 显卡没有视频输出接口，在 BISO 中检查 `Primary Display` 选项，使用 IGFX 选项，避免无法显示界面。
 
+<!--more-->
+
 P40 显卡有 24G 显存，需提前在 BIOS 开启 `Above 4G Decoding` （华硕的中文界面选项是“大于4G地址空间解码”）
 
 ## 宿主机安装驱动
@@ -35,8 +37,6 @@ deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
 ```
 
 执行 `apt update && apt install build-essential pve-headers-$(uname -r)`
-
-<!--more-->
 
 到 <https://www.nvidia.com/download/index.aspx> 下载显卡对应的驱动
 

@@ -13,6 +13,8 @@ SSH 是 Linux 下最常见的远程登录服务，通过非对称加密，可以
 
 deepin 系统默认集成 OpenSSH，无需手动安装。但出于安全考虑，默认未启用 ssh 服务，使用 `sudo systemctl start ssh` 启用 ssh 服务。
 
+<!--more-->
+
 > ！警告：网络上存在大量 ssh 扫描，如你的账号使用弱密码，请关闭 ssh 密码认证模式。
 
 ## 登录
@@ -23,7 +25,6 @@ deepin 系统默认集成 OpenSSH，无需手动安装。但出于安全考虑�
 
 默认情况下，登录需要校验用户密码，首次登录到主机还需确认主机 ssh 指纹，避免中间人攻击。如果主机未进行操作，却发生 ssh 指纹变化，ssh 登录时会返回警告 WARNING: POSSIBLE DNS SPOOFING DETECTED!，请警惕中间人攻击，如果你刚重装了主机的操作系统，可根据 ssh 警告提示，使用`ssh-keygen -f`移除之前的主机指纹记录，再进行登录。
 
-<!--more-->
 ### 公钥免密登录
 
 使用`ssh-copy-id localhost`可自动配置免密登录，再次使用 ssh 登录时，则无需输入密码。如 ssh-copy-id 返回 No identities found 错误，使用 ssh-keygen 先生成你的公钥（ssh-keygen 一路回车即可）。

@@ -1,18 +1,18 @@
 ---
-title: Bcache 使用
+title: 使用 Bcache 对机械硬盘加速
 date: 2022-06-19T00:09:58+08:00
 draft: false
 tags: ["存储", "deepin"]
 categories: ["工具"]
 ---
 
-## Bcache 是什么
-
 Bcache 是 Linux 下的一个块缓存内核模块，可用于使用单个固态硬盘为一个或多个机械硬盘加速，也可用于使用本地磁盘为网络磁盘的加速。
 
 Bcache 有比较灵活的缓存模式，支持安全读写缓存(writethrough)、高性能读写缓存(writeback)、只读缓存(writearound)、停用缓存(none)等模式，并且可在线动态调整。
 
 Bcache 还会自动识别顺序写入，当发现正在进行顺序写入时跳过缓存层，以减少缓存设备(固态硬盘)的损耗，延长固态硬盘的寿命。
+
+<!--more-->
 
 ## 快速开始
 
@@ -25,8 +25,6 @@ deepin 仓库已存在 Bcache 1.0.8 版本，可直接在终端使用 `sudo apt 
 ### 格式化
 
 安装完成后，可使用 `sudo make-cache -C /dev/nvmeX -B /dev/sdX` 格式化缓存设备(nvmeX)和后端设备(sdX)，并自动关联两个设备。
-
-<!--more-->
 
 > 可能出现的错误
 >
