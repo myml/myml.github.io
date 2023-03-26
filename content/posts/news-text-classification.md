@@ -111,6 +111,7 @@ model = AutoModelForSequenceClassification.from_pretrained(
 其实应该在数据处理阶段进行清洗，但我们就先将错就错吧，暂且放下这些细支末节来开启我们的训练！
 
 ```python
+from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
 training_args = TrainingArguments(
     report_to="none",
     output_dir="test_trainer",
