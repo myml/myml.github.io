@@ -153,7 +153,7 @@ print(pipe("来自召唤师峡谷的呼唤"))
 trainer.save_model("result/")
 tokenizer.save_pretrained("result/")
 ```
-除了训练的模型，我们还应该将标记器进行保存，这样就可以将 result 文件夹进行打包贡献给朋友，他们只需要简单的三行代码就可使用你训练的模型
+除了训练的模型，我们还应该将标记器进行保存，这样就可以将 result 文件夹进行打包分享给朋友，他们只需要简单的三行代码就可使用你训练的模型
 ```python
 from transformers import pipeline
 pipe = pipeline("text-classification", model="./result")
