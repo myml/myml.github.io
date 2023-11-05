@@ -36,7 +36,7 @@ P40 显卡有 24G 显存，需提前在 BIOS 开启 `Above 4G Decoding` （华�
 deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
 ```
 
-执行 `apt update && apt install build-essential pve-headers-$(uname -r)`
+执行 `apt update && apt install build-essential nvidia-modprobe pve-headers-$(uname -r)`
 
 到 <https://www.nvidia.com/download/index.aspx> 下载显卡对应的驱动
 
