@@ -88,9 +88,9 @@ cr--r--r-- 1 root root 235, 2 Mar 19 21:09 nvidia-cap2
 其中 195、506、235 就是设备号，需要把设备号追加到 lxc 容器的配置文件 `/etc/pve/lxc/103.conf` （103 是容器 id，要改成你自己的容器 id） 并添加设备挂载配置项，如：
 
 ```txt
-lxc.cgroup.devices.allow: c 195:* rwm
-lxc.cgroup.devices.allow: c 506:* rwm
-lxc.cgroup.devices.allow: c 235:* rwm
+lxc.cgroup2.devices.allow: c 195:* rwm
+lxc.cgroup2.devices.allow: c 506:* rwm
+lxc.cgroup2.devices.allow: c 235:* rwm
 lxc.mount.entry: /dev/nvidia0 dev/nvidia0 none bind,optional,create=file
 lxc.mount.entry: /dev/nvidiactl dev/nvidiactl none bind,optional,create=file
 lxc.mount.entry: /dev/nvidia-uvm dev/nvidia-uvm none bind,optional,create=file
